@@ -1,0 +1,336 @@
+/* ===========================
+   ESTILO GERAL
+=========================== */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #212529;
+  background-color: #ffffff;
+}
+
+/* Espaçamento das seções */
+section {
+  padding: 80px 0;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+.navbar {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  transition: background 0.3s ease;
+  background: linear-gradient(rgba(0, 123, 255, 3), rgba(0, 123, 255, 0.8)),
+              url("img/fundo_bar.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  color: #f8f9fa;
+  margin-left: 15px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffc107 !important;
+  transform: translateY(-2px) translatex(2px);
+}
+
+.nav .btn-outline-primary {
+  transition: all 0.3s ease;
+}
+
+.nav .btn-outline-primary:hover {
+  background-color: #bfc3c9;
+  color: #ffffff;
+}
+  
+/* ===========================
+   SEÇÃO HOME
+=========================== */
+
+#homebtnrede {
+  vertical-align: text-top;
+  position: absolute;
+  right: 100px;
+  top: 50px;
+  margin: 12px;
+}
+
+#home {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  text-align: center;
+}
+
+#home img {
+  border: 4px solid #0d6efd;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease;
+}
+
+#home img:hover {
+  transform: scale(1.05);
+}
+
+#home h1 {
+  font-size: 2.5rem;
+  margin-top: 10px;
+}
+
+#home p {
+  color: #6c757d;
+}
+
+/* ===========================
+   SOBRE
+=========================== */
+#sobre p {
+  font-size: 17px;
+  line-height: 1.5;
+  color: #495057;
+  width: 85%;
+  text-align: justify;
+  margin: 0 auto 20px auto;
+}
+
+#sobre i {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#sobre i:hover {
+  transform: scale(1.2);
+  color: #0d6efd;
+}
+
+#sobre .btn-outline-primary {
+  transition: all 0.3s ease;
+}
+
+#sobre .btn-outline-primary:hover {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+/* ==Icones======================== */
+
+    .icon-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    .icon-item {
+       width: 80px;
+    }
+
+    .icon-item img {
+      width: 35px;
+      height: 35px;
+    }
+
+    #sobre .icon-item p {
+      font-size: 0.7rem;
+      color: #495057;  
+      text-align: center;
+    }
+
+
+
+/* ===========================
+   PROJETOS
+=========================== */
+#projetos .card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#projetos .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+#projetos .card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+#projetos .btn-outline-primary {
+  transition: all 0.3s ease;
+}
+
+#projetos .btn-outline-primary:hover {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+
+/* ==== POPUP PROJETOS ================= */
+.popup {
+  position: fixed;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  text-align:justify;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 80vh; /* altura máxima do popup */
+  overflow-y: auto; /* rolagem vertical */
+  width: 90%;
+}
+
+/* Quando o popup é exibido */
+.popup.show {
+  opacity: 1;
+  transform: scale(1);
+  display: block;
+}
+
+/* === BLOQUEAR SCROLL DO FUNDO QUANDO POPUP ESTÁ ABERTO ======== */
+body.popup-aberto {
+  overflow: hidden; /* impede rolagem da página */
+}
+
+.popup h2 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.popup h3 {
+  font-size: 16px;
+  font-weight: bold;
+}
+.popup p {
+  margin-top: 10px;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.blurred {
+filter: blur(4px)!important;
+}
+
+.main-content {
+      padding: 20px;
+      transition: filter 0.3s ease;
+}
+
+.overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+}
+
+.overlay.active {
+      display: flex;
+}
+
+
+/* ===========================
+   CONTATO
+=========================== */
+#contato label{
+  font-weight: 600;
+}
+
+#contato button {
+  width: 100%;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+#contato button:hover {
+  background-color: #0b5ed7;
+  transform: translateY(-2px);
+}
+
+#contato textarea, input {
+   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ===========================
+   FOOTER
+=========================== */
+footer{
+  background: linear-gradient(rgba(35, 39, 43, 9), rgba(35, 39, 43, 0.9)),
+              url("img/fundo_bar.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px 0;
+}
+
+.footer-social a {    /* === Tamanho botões inferiores === */
+  margin: 0 4px;
+  background-color: #ffffff;
+  border: none;
+  font-size: 12px;
+  padding: 6px 10px;
+}
+
+.footer-text {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+
+
+/* ===========================
+   RESPONSIVIDADE
+=========================== */
+@media (max-width: 768px) {
+  #home h1 {
+    font-size: 2rem;
+  }
+
+  section {
+    padding: 60px 0;
+  }
+
+  #projetos .card img {
+    height: 180px;
+  }
+
+  #homebtnrede {
+    right: 0px;
+  }
+}
+
+
+/* ===========================
+   ANIMAÇÕES SUAVES
+=========================== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
