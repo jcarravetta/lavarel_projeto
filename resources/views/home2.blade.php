@@ -30,8 +30,11 @@
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-  <!-- Custom CSS -->
+ <!-- O Laravel vai carregar o seu style.css personalizado direto da pasta pública -->
   <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+
+  <!-- Carrega o seu script personalizado direto da pasta pública -->
+  <script src="{{ asset('js/script.js') }}"></script>
 
   <!-- Icone page -->
   <link rel="icon" href="{{ asset('img/ico.PNG') }}">
@@ -180,5 +183,86 @@
     </div>
   </section>
 </div>
+
+
+<!-- Estrutura dos Popups (Modais Personalizados) -->
+
+<!-- POPUP 1: Sistema web Meu Portfólio -->
+<div id="popup1" class="popup-wrapper">
+  <div class="popup-box bg-white rounded shadow p-4 position-relative">
+    <!-- Botão de Fechar -->
+    <button type="button" class="btn-close position-absolute top-0 end-0 m-3" onclick="fecharPopup('popup1')" aria-label="Close"></button>
+
+    <div class="text-center mb-3">
+      <img src="{{ asset('img/logo_meu_portfolio.png') }}" alt="Logo Meu Portfólio" class="img-fluid rounded mb-2" style="max-height: 150px;">
+      <h3 class="fw-bold text-primary">Sistema Web Meu Portfólio</h3>
+    </div>
+
+    <div class="popup-body">
+      <p>Este sistema foi desenvolvido para realizar a gestão estratégica de portfólios e certificações com foco em visualização limpa de projetos de TI.</p>
+      <h5 class="fw-bold text-secondary">Tecnologias Utilizadas:</h5>
+      <span class="badge bg-primary me-1">HTML5</span>
+      <span class="badge bg-primary me-1">CSS3</span>
+      <span class="badge bg-primary me-1">Bootstrap 5</span>
+      <span class="badge bg-primary me-1">Laravel (PHP)</span>
+    </div>
+
+    <div class="text-end mt-4">
+      <button class="btn btn-secondary" onclick="fecharPopup('popup1')">Fechar</button>
+      <a href="https://github.com/jcarravetta/lavarel_projeto" target="_blank" class="btn btn-primary bi-github"> Ver Código</a>
+    </div>
+  </div>
+</div>
+
+<!-- POPUP 2: Genius Sonoro -->
+<div id="popup2" class="popup-wrapper">
+  <div class="popup-box bg-white rounded shadow p-4 position-relative">
+    <button type="button" class="btn-close position-absolute top-0 end-0 m-3" onclick="fecharPopup('popup2')" aria-label="Close"></button>
+
+    <div class="text-center mb-3">
+      <img src="{{ asset('img/genius.png') }}" alt="Genius Sonoro" class="img-fluid rounded mb-2" style="max-height: 150px;">
+      <h3 class="fw-bold text-primary">Genius Sonoro</h3>
+    </div>
+
+    <div class="popup-body">
+      <p>Um projeto inclusivo desenvolvido com foco em acessibilidade para deficientes visuais, recriando o clássico jogo Genius com forte apelo auditivo e comandos adaptados.</p>
+      <h5 class="fw-bold text-secondary">Tecnologias Utilizadas:</h5>
+      <span class="badge bg-success me-1">MIT App Inventor</span>
+      <span class="badge bg-success me-1">No-Code</span>
+      <span class="badge bg-success me-1">UI/UX Inclusivo</span>
+    </div>
+
+    <div class="text-end mt-4">
+      <button class="btn btn-secondary" onclick="fecharPopup('popup2')">Fechar</button>
+    </div>
+  </div>
+</div>
+
+<!-- POPUP 3: Dolcezza -->
+<div id="popup3" class="popup-wrapper">
+  <div class="popup-box bg-white rounded shadow p-4 position-relative">
+    <button type="button" class="btn-close position-absolute top-0 end-0 m-3" onclick="fecharPopup('popup3')" aria-label="Close"></button>
+
+    <div class="text-center mb-3">
+      <img src="{{ asset('img/logo dolcezza.jpg') }}" alt="Dolcezza" class="img-fluid rounded mb-2" style="max-height: 150px;">
+      <h3 class="fw-bold text-primary">Dolcezza - Dolceria Artesanal</h3>
+    </div>
+
+    <div class="popup-body">
+      <p>Desenvolvimento completo da identidade visual para a marca Dolcezza. O escopo incluiu a criação do logotipo oficial, definição de paleta de cores corporativa e peças gráficas promocionais.</p>
+      <h5 class="fw-bold text-secondary">Habilidades Aplicadas:</h5>
+      <span class="badge bg-info text-dark me-1">Identidade Visual</span>
+      <span class="badge bg-info text-dark me-1">Design Gráfico</span>
+      <span class="badge bg-info text-dark me-1">Branding</span>
+    </div>
+
+    <div class="text-end mt-4">
+      <button class="btn btn-secondary" onclick="fecharPopup('popup3')">Fechar</button>
+    </div>
+  </div>
+</div>
+
+
+
 </body>
 </html>
