@@ -271,7 +271,7 @@
               <p>O jogo Genius com quatro botões é um jogo de memória auditiva e sequencial, em que cada botão possui um som diferente e está localizado em um quadrante da tela. O botão do canto superior esquerdo emite o som DÓ, o superior direito emite RÉ, o inferior esquerdo emite MI e o inferior direito emite FA. O sistema gera automaticamente uma sequência de sons, e o jogador deve prestar atenção na ordem em que eles são apresentados para conseguir reproduzi-la corretamente.</p>
               <p>A cada rodada, o jogo toca a sequência completa de sons, e o jogador precisa repetir exatamente na mesma ordem utilizando os botões correspondentes. Se acertar, o jogo adiciona um novo som ao final da sequência e a reproduz novamente desde o início, tornando o desafio cada vez mais difícil.</p>
               <p>Se o jogador pressionar um botão diferente do esperado em qualquer momento da sequência, o jogo é encerrado imediatamente. O objetivo é memorizar e repetir corretamente o maior número possível de sons na ordem apresentada.</p>
-              <p><a href="https://www.joelmircarravetta.free.nf/Genius_Sonoro.apk" target="_blank" class="btn btn-outline-primary">Baixar o jogo</a></p>
+              <p><a href="/storage/app/public/Genius_Sonoro.apk" target="_blank" class="btn btn-outline-primary">Baixar o jogo</a></p>
               <button class="btn btn-outline-primary" onclick="fecharPopup()">Fechar</button>
             </div>
 
