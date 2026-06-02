@@ -31,10 +31,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
-  <!-- Icone page -->
-  <link rel="icon" href="img/ico.PNG">
+
+ <!-- Icone page -->
+<link rel="icon" href="{{ asset('img/ico.PNG') }}">
+
 
   <title>Meu Portfólio - Joelmir Matthes Carravetta</title>
 
@@ -65,11 +67,11 @@
   <section id="home" class="vh-100 d-flex align-items-center bg-light text-center">
     <div class="container">
         <div id="homebtnrede">
-          <a href="https://www.linkedin.com/in/joelmir-carravetta/" target="_blank" class="btn btn-outline-primary bi-linkedin"></a> 
-          <a href="https://www.instagram.com/joelmircarravetta/" target="_blank" class="btn btn-outline-primary bi-instagram"></a> 
-          <a href="https://wa.me/5551991250471" target="_blank" class="btn btn-outline-primary bi-whatsapp"></a> 
+          <a href="https://www.linkedin.com/in/joelmir-carravetta/" target="_blank" class="btn btn-outline-primary bi-linkedin"></a>
+          <a href="https://www.instagram.com/joelmircarravetta/" target="_blank" class="btn btn-outline-primary bi-instagram"></a>
+          <a href="https://wa.me/5551991250471" target="_blank" class="btn btn-outline-primary bi-whatsapp"></a>
         </div>
-    
+
       <img src="img/perfil_pro_baixa.png" alt="Foto pessoal" class="rounded-circle mb-3 shadow" width="150">
       <h1 class="fw-bold">Olá, eu sou <br><span class="text-white bg-primary px-2 rounded">Joelmir Matthes</span></h1>
       <p class="lead">Desenvolvedor Front-End | HTML | CSS | Bootstrap | JavaScript</p>
@@ -88,7 +90,7 @@
       <p>Tenho facilidade de aprendizado, boa comunicação e gosto de trabalhar em equipe. Sou motivado por desafios e estou sempre buscando evoluir, tanto técnica quanto profissionalmente.</p>
       <p>Meu foco atual é aplicar na prática tudo o que venho aprendendo, participar de projetos reais, contribuir com soluções criativas e continuar minha trajetória de crescimento na área de TI.</p>
       <p>Busco uma oportunidade que me permita desenvolver minhas habilidades, aprender com profissionais experientes e agregar valor ao time e à empresa.</p>
-      
+
       <div class="icon-gallery">
 
   <!-- Imagens externas Bootstrap-->
@@ -154,7 +156,7 @@
             </div>
           </div>
         </div>
-        
+
         <div class="col-md-4">
           <div class="card">
             <img src="img/genius.png" class="card-img-top" alt="Projeto 2">
@@ -332,6 +334,6 @@
       });
     });
   </script>
-</div>  
+</div>
 </body>
 </html>
