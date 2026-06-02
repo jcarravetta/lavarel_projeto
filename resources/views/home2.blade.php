@@ -262,7 +262,72 @@
   </div>
 </div>
 
+ <!-- Contato -->
+  <section id="contato" class="py-5 fade-in">
+  <div  class="mainContent" id="mainContent">
+    <h2 class="text-center mb-4">Contato</h2>
 
+    <!-- Alerta de sucesso -->
+    <div id="alerta-sucesso" class="alert alert-success text-center w-75 mx-auto d-none col-lg-8 mb-3" role="alert">
+      ✅ Mensagem enviada com sucesso! Obrigado pelo contato.
+    </div>
+
+    <form id="formContato" action="https://formsubmit.co/joelmircarravetta@msn.com" method="POST" class="w-75 mx-auto col-lg-8">
+      <!-- Configurações ocultas -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_subject" value="Meu Portfólio">
+      <input type="hidden" name="_template" value="box">
+
+      <div class="col-lg-8 mb-3 mx-auto">
+        <label for="nome" class="form-label">Nome</label>
+        <input type="text" name="nome" class="form-control" id="nome" required>
+      </div>
+      <div class="col-lg-8 mb-3 mx-auto">
+        <label for="email" class="form-label">E-mail</label>
+        <input type="email" name="email" class="form-control" id="email" required>
+      </div>
+      <div class="col-lg-8 mb-3 mx-auto">
+        <label for="mensagem" class="form-label">Mensagem</label>
+        <textarea name="mensagem" class="form-control" id="mensagem" rows="3" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary w-50 mx-auto d-block">Enviar</button>
+    </form>
+  </div>
+
+    </div>
+
+  <script>
+    // Exibe o alerta de sucesso sem sair da página
+    document.getElementById("formContato").addEventListener("submit", function(e) {
+      e.preventDefault(); // Impede o redirecionamento padrão
+      const form = e.target;
+
+      fetch(form.action, {
+        method: "POST",
+        body: new FormData(form)
+      }).then(response => {
+        if (response.ok) {
+          document.getElementById("alerta-sucesso").classList.remove("d-none");
+          form.reset();
+        }
+      }).catch(error => console.error('Erro:', error));
+    });
+  </script>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-4">
+    <div class="footer-social">
+     <a href="https://www.linkedin.com/in/joelmir-carravetta/" target="_blank" class="btn btn-outline-primary bi-linkedin"></a>
+     <a href="https://www.instagram.com/joelmircarravetta/" target="_blank" class="btn btn-outline-primary bi-instagram"></a>
+     <a href="https://wa.me/5551991250471" target="_blank" class="btn btn-outline-primary bi-whatsapp"></a>
+    </div>
+    <div class="footer-text">
+      &copy; 2025 - Joelmir Carravetta Matthes | Feito em
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="25px" height="25px"> Bootstrap
+    </div>
+  </footer>
 
 </body>
 </html>
